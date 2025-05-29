@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Great+Vibes&display=swap');
+
+:root{
+    --vermelho: #6f1d1bff;
+    --amarelo-queimado: #bb9457ff;
+    --marrom-escuro: #432818ff;
+    --marom-claro: #99582aff;
+    --amarelo-bb: #ffe6a7ff;
+    --preto:#000000;
+    --branco:#ffffff;
+    --fonte-primaria:"Eagle Lake", serif;
+    --fonte-secundaria: "Great Vibes", cursive;
+
+}
