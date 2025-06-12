@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Great+Vibes&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+}
 :root{
     --vermelho: #6f1d1bff;
     --amarelo-queimado: #bb9457ff;
