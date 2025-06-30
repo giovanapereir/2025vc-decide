@@ -15,5 +15,25 @@
     --branco:#ffffff;
     --fonte-primaria:"Eagle Lake", serif;
     --fonte-secundaria: "Great Vibes", cursive;
+}
+ body{
+    background-color: var(--marrom-escuro);
+    color: var(--marom-claro);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: var(--fonte-primaria);
+}
+.caixa-principal{
+    background-color: var(--amarelo-bb);
+    width: 90%;
+    max-width: 600px;
+    text-align:center;
+    padding:20px ;
+}
 
+.titulo{
+    color:var(--vermelho);
+    font-family: var(--fonte-secundaria);
 }

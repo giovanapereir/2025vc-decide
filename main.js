@@ -41,4 +41,15 @@ let perguntaatual;
 function motraperguntas(){
     perguntaaual = perguntas[atual]
     caixaperguntas.textContent = perguntaatual.enunciado
+    mostraralternativa ();
 }
+
+function mostrarAlternativa(){
+    for( const alternativa of perguntaatual.alternativas ){
+        const otaoAlternativas = document.createElement("button");
+        otaoAlternativas.textContent = alternativa;
+        caixaalternativas.appendChild(botaoAlternativas)
+    }
+}
+
+mostrarpergunta ();
