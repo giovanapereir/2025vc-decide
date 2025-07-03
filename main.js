@@ -46,10 +46,16 @@ function motraperguntas(){
 
 function mostrarAlternativa(){
     for( const alternativa of perguntaatual.alternativas ){
-        const otaoAlternativas = document.createElement("button");
-        otaoAlternativas.textContent = alternativa;
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa.texto;
+        botaoAlternativas.addEventListener("click" , () => respostaSelecionada(alternativa));
         caixaalternativas.appendChild(botaoAlternativas)
-    }
+        }        
+}
+
+function respostaSelecionada( opcaoSelecionada){
+    atual++;
+    mostrarpergunta();
 }
 
 mostrarpergunta ();
