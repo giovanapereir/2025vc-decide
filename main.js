@@ -39,6 +39,9 @@ let atual = 0;
 let perguntaatual;
 
 function motraperguntas(){
+    if(atual>= perguntas){
+        mostraResultado
+    }
     perguntaaual = perguntas[atual]
     caixaperguntas.textContent = perguntaatual.enunciado
     mostraralternativa ();
@@ -54,8 +57,18 @@ function mostrarAlternativa(){
 }
 
 function respostaSelecionada( opcaoSelecionada){
+    const afirmacao = opcaoSelecionada.afirmacao;
+    historiafinal += afirmacao + " "
     atual++;
     mostrarpergunta();
 }
 
+function mostraResultado(){
+    caixaperguntas.textcontent =" tudo começou...";
+    textoreultado.textContent = historiafinal;
+    caixaalternativas.textContent = "";
+}
+
 mostrarpergunta ();
+
+console.log(perguntas)
